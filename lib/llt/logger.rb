@@ -5,7 +5,7 @@ module LLT
   class Logger
     LEVELS = %w{ error info parser cf morph debug }
     # Numeric vals  0    1    2     3   4     5
-    DEFAULT_LEVEL = 5
+    DEFAULT_LEVEL = 1
 
     @level = ENV["LLT_DEBUG"] ? normalized_level(ENV["LLT_DEBUG"]) : DEFAULT_LEVEL
     @loggers = []
