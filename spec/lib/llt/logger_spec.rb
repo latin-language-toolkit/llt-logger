@@ -19,8 +19,8 @@ describe LLT::Logger do
         logger.level.should_not be_nil
       end
 
-      it "default level is debug" do
-        logger.level.should == 5
+      it "default level is info" do
+        logger.level.should == 1
       end
     end
 
